@@ -1,5 +1,5 @@
 FROM openjdk:8-jre-alpine
-LABEL maintainer="ginoalex8964@yahoo.com"
+LABEL maintainer="bongani@utexas.edu"
 
 ENV APP_ROOT /app
 
