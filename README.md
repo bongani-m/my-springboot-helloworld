@@ -54,10 +54,6 @@ Please add the following to your .travis.yml file:
 $ travis encrypt DOCKER_PASSWORD="<your-dockerhub-password>"
 Please add the following to your .travis.yml file:
   secure: "<encrypted_DOCKER_PASSWORD>"
-
-$ travis encrypt TEAM_CHANNEL_URL="<your-TEAMS-channel-url>"
-Please add the following to your .travis.yml file:
-  secure: "<encrypted_TEAM_CHANNEL_URL>"
 ```
 
 The env configurations in .travis.yml file need to be replaced with the encrypted info.
