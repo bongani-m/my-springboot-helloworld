@@ -13,6 +13,7 @@ public class Person {
     @Id
     @Column(name = "id", columnDefinition = "uuid")
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @org.hibernate.annotations.Type(type="pg-uuid")
     private UUID id;
 
     private String name;
