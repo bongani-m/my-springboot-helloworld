@@ -7,3 +7,14 @@ services:
     container_name: hello-world
     ports:
       - "9908:9908"
+    depends_on:
+      - fk-db
+  fk-db:
+    image: postgres
+    container_name: fkdb
+    ports:
+      - "15432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: fk

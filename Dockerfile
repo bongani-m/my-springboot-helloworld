@@ -10,4 +10,4 @@ WORKDIR ${APP_ROOT}
 COPY target/*.jar ${APP_ROOT}/run.jar
 COPY config ${APP_ROOT}/config/
 
-ENTRYPOINT ["java", "-jar", "run.jar"]
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=docker", "-jar", "run.jar"]
