@@ -11,6 +11,7 @@ public class Person {
 
 
     @Id
+    @Column(name = "id", columnDefinition = "uuid")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
