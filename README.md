@@ -54,6 +54,18 @@ Please add the following to your .travis.yml file:
 $ travis encrypt DOCKER_PASSWORD="<your-dockerhub-password>"
 Please add the following to your .travis.yml file:
   secure: "<encrypted_DOCKER_PASSWORD>"
+
+$ travis encrypt DATABASE_URL="<heroku-postgres-URL>"
+Please add the following to your .travis.yml file:
+  secure: "<encrypted_DATABASE_URL>"
+
+$ travis encrypt DATABASE_USER="<heroku-postgres-user>"
+Please add the following to your .travis.yml file:
+  secure: "<encrypted_DATABASE_USER>"
+
+$ travis encrypt DATABASE_PASS="<heroku-postgres-pass>"
+Please add the following to your .travis.yml file:
+  secure: "<encrypted_DATABASE_PASS>"
 ```
 
 The env configurations in .travis.yml file need to be replaced with the encrypted info.

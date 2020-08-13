@@ -2,6 +2,12 @@ version: "3"
 
 services:
   app:
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: fk
+      DATABASE_URL: jdbc:postgresql://fkdb:5432/fk
+      PORT: 9908
     build: .
     image: bonganimbigi/my-springboot-helloworld:latest
     container_name: hello-world
