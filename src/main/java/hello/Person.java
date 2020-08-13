@@ -3,6 +3,7 @@ package hello;
 
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity
 @Table(name = "person")
@@ -11,7 +12,7 @@ public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private UUID id;
 
     private String name;
 
@@ -21,11 +22,11 @@ public class Person {
         this.name = name;
     }
 
-    public long getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
