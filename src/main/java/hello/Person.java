@@ -14,7 +14,7 @@ public class Person {
 
 
     @Id
-    @Type(type="org.hibernate.type.PostgresUUIDType")
+    @Type(type="uuid-char")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
